@@ -1,4 +1,4 @@
-# Minimalist 32-bit Kernel
+# Basic 32-bit Kernel
 
 This project aims to create a bootable OS with a very minimalistic kernel. See my other project, [32_bit_kernel](https://github.com/jammel-yeboah/32_bit_kernel), which I'm currently working on, for a more robust and improved version of this kernel
 
