@@ -22,3 +22,9 @@ check-multiboot: myos.bin
 		else \
 			echo the file is not multiboot; \
 		fi
+
+myos.iso: myos.bin grub.cfg
+	mkdir -p isodir/boot/grub
+	cp myos.bin isodir/boot/myos.bin
+	cp grub.cfg isodir/boot/grub/grub.cfg
+	grub-mkrescue -o myos.iso isodir
